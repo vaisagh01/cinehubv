@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    /* navigation styles */
+    .navig{
+        @apply relative  text-slate-600 font-bold drop-shadow-md
+    }
+    
+    .navig:hover{
+        @apply  text-red-500 opacity-90 -translate-y-[3px] transition-all duration-500 
+    } 
+    
+    /* sidebar styles */
+    .categ-btn{
+        @apply relative text-slate-600 font-medium
+    }
+    .categ-btn:hover{
+        @apply text-slate-400 -translate-y-[1px] transition-all ease-linear
+        
+    }
+    .categ-btn:active{
+        @apply text-slate-300
+    }
+    /* page bg */
+    .page-bg{
+        @apply h-[85.5vh] mb-9 bg-slate-800 w-[95vw] border-[2px] border-slate-700 m-2 rounded-md shadow-[0_0_10px_4px_rgba(0,0,0,0.3)]
+    }
+    .active{
+        @apply text-red-500 opacity-90 -translate-y-[2px] transition-all
+    }
+
+    .hide-scroll::-webkit-scrollbar{
+        display: none;
+    }
+
+    .active-genre{
+        @apply border-2 border-slate-400 rounded-full px-3 py-[1px] text-slate-400  bg-slate-800
+    }
+    .sort-by{
+        @apply border-2 border-red-400 rounded-full px-3 py-[1px] text-slate-400  bg-slate-800
+    }
+
+    .inactive{
+        @apply border-2 border-slate-700 rounded-full px-3 py-[1px] text-slate-600 bg-slate-800
+    }
+    .auto-scroll{
+        animation: autoscroll 70s infinite linear;
+    }
+    
+
+    
+}
