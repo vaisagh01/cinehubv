@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import {motion} from 'framer-motion';
 
 export default function Filter({setActiveGenre, activeGenre, setFiltered, allShows}) {
-    console.log(activeGenre);
     
     useEffect(()=>{
         if(activeGenre === 0){

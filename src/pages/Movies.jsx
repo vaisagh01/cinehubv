@@ -30,12 +30,12 @@ export default function Movies() {
   return (
     <div>
       <div className="page-bg">
-      <Carousel showThumbs={false} className="rounded-lg" autoPlay infiniteLoop={true} swipeable emulateTouch useKeyboardArrows interval={4000} showStatus={false} showIndicators={false} swipeScrollTolerance={10}  >
+      <Carousel showThumbs={false} className="rounded-lg" autoPlay infiniteLoop={true} swipeable emulateTouch useKeyboardArrows interval={4000} showStatus={false} showIndicators={false} swipeScrollTolerance={1}  >
         {allshows.map(movie => {return <MovieSlider key={movie.id} movie={movie}/>})}
       </Carousel>
     </div>
     <div className="page-bg">
-      <Carousel showThumbs={false} className="rounded-lg" autoPlay infiniteLoop={true} swipeable emulateTouch useKeyboardArrows interval={4000} showStatus={false} showIndicators={false} swipeScrollTolerance={10}  >
+      <Carousel showThumbs={false} className="rounded-lg" autoPlay infiniteLoop={true} swipeable emulateTouch useKeyboardArrows interval={4000} showStatus={false} showIndicators={false} swipeScrollTolerance={1}  >
         {allshows.map(movie => {return <MovieSlider key={movie.id} movie={movie}/>})}
       </Carousel>
     </div>

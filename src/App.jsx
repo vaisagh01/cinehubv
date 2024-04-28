@@ -10,6 +10,7 @@ import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import TV from "./pages/TV";
 import Movies from "./pages/Movies";
+import MovieDetails from "./components/MovieDetails";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path="/Popular" element={<Popular />} />
             <Route path="/Help" element={<Help />} />
             <Route path="/TV" element={<TV />} />
+            <Route path="/MovieDetails" element={<MovieDetails/>} />
           </Routes>
         </div>
       </BrowserRouter>
